@@ -6,4 +6,5 @@ chown -R abc:abc \
 	/usr/bin/python3.sh\
 	/usr/bin/pip3.sh
 
-chmod +x /usr/bin/java.sh
+chmod +x /usr/bin/python3.sh
+chmod +x /usr/bin/pip3.sh
