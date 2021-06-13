@@ -29,8 +29,9 @@ jobs:
         env:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         run: |
+          cd ./alpine/python3
           docker buildx build \
           --platform=linux/amd64,linux/arm/v7,linux/arm64 \
           --output "type=image,push=true" \
-          --file ./alpine/python3/Dockerfile . \
+          --file ./Dockerfile . \
           --tag ${DOCKER_USERNAME}/python3:alpine-latest
