@@ -140,7 +140,7 @@ RUN set -ex; \
 	rm -f get-pip.py
 
 # add local files
-COPY 。/root/ /
+COPY ./root/ /
 
 WORKDIR /app
 
